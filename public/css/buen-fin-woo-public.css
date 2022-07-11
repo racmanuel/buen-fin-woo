@@ -1,0 +1,69 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+:root {
+    --font-family: inherit;
+    --padding: 12px;
+    --margin: 6px;
+    --border-radius: 12px;
+}
+
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+#msi-woocommerce {
+    color: #ffffff;
+    background-color: #E20613;
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+}
+
+.img-msi-woocommerce {
+    width: 72px;
+    height: 72px;
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-msi-woocommerce {
+    font-family: var(--font-family);
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+}
+
+.msi-woocommerce {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: var(--border-radius);
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+    padding: var(--padding);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conditions-msi-woocommerce {
+    font-family: var(--font-family);
+    font-size: 8px;
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+}
