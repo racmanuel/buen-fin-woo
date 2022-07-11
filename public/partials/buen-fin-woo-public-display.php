@@ -17,29 +17,49 @@
 <div class="row" id="msi-woocommerce">
     <div class="column">
         <div class="row">
-            <img src="<?= $image ?>" class="img-msi-woocommerce"></img>
-            <h2 class="title-msi-woocommerce">¡Aprovecha los precios del Buen Fin + MSI!</h2>
+            <img src="<?= $image ?>" class="img-msi-woocommerce" width="50"></img>
+            <span class="title-msi-woocommerce"><?= $TITLE_OPTION ?></span>
         </div>
+
         <div class="row">
             <div class="column msi-woocommerce">
-                <span>
-                    <strong>$ <?= $MSIR3 ?> MXN </strong> a <strong>3 MSI</strong>.
-                </span>
-            </div>
-            <div class="column msi-woocommerce">
-                <span>
-                    <strong>$ <?= $MSIR6 ?> MXN </strong> a <strong>6 MSI</strong>.
-                </span>
-            </div>
-            <div class="column msi-woocommerce">
-                <span>
-                    <strong>$ <?= $MSIR12 ?> MXN </strong>a <strong>12 MSI</strong>.
-                </span>
+                <table>
+                    <?php if ($MSIR3_OPTION == 'yes'): ?>
+                    <!-- 3 Meses Sin Intereses -->
+                    <tr>
+                        <td class="buen-fin-woo-price"><?= $SYMBOL_CURRENCY; ?> <?= $MSI3 ?> <?= $CURRENCY ?> </td>
+                        <td>a 3 Meses sin Intereses.</td>
+                    </tr>
+                    <?php endif; ?>
+                    <?php if ($MSIR6_OPTION == 'yes'): ?>
+                    <!-- 6 Meses Sin Intereses -->
+                    <tr>
+                        <td class="buen-fin-woo-price"><?= $SYMBOL_CURRENCY; ?> <?= $MSI6 ?> <?= $CURRENCY ?> </td>
+                        <td>a 6 Meses sin Intereses.</td>
+                    </tr>
+                    <?php endif; ?>
+                    <?php if ($MSIR9_OPTION == 'yes'): ?>
+                    <!-- 9 Meses Sin Intereses -->
+                    <tr>
+                        <td class="buen-fin-woo-price"><?= $SYMBOL_CURRENCY; ?> <?= $MSI9 ?> <?= $CURRENCY ?> </td>
+                        <td>a 9 Meses sin Intereses.</td>
+                    </tr>
+                    <?php endif; ?>
+                    <?php if ($MSIR12_OPTION == 'yes'): ?>
+                    <!-- 12 Meses Sin Intereses -->
+                    <tr>
+                        <td class="buen-fin-woo-price"><?= $SYMBOL_CURRENCY; ?> <?= $MSI12 ?> <?= $CURRENCY ?> </td>
+                        <td>a 12 Meses sin Intereses.</td>
+                    </tr>
+                    <?php endif; ?>
+                </table>
             </div>
         </div>
         <div class="row">
-            <span class="conditions-msi-woocommerce">* Promocion valida solo con tarjetas de crédito y bancos
-                participantes del 1 al 16 de noviembre de 2021.</span>
+            <span class="conditions-msi-woocommerce">
+                <?php _e('*Promocion valida solo con tarjetas de crédito y bancos participantes del 10 al 16 de Noviembre del' , 'buen-fin-woo'); ?>
+                <?php echo date('Y'); ?>. <?= $TERMS_OPTION; ?>
+            </span>
         </div>
     </div>
 </div>

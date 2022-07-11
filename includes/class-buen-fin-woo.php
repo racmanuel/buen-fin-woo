@@ -157,6 +157,10 @@ class Buen_Fin_Woo {
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 
+		/** Add a tab to WooCommerce Settings */
+		$this->loader->add_filter( 'woocommerce_get_sections_products', $plugin_admin, 'buen_fin_woo_add_section' );
+		/** Show Fields in WooCommerce Settings */
+		$this->loader->add_filter( 'woocommerce_get_settings_products', $plugin_admin, 'buen_fin_woo_all_settings');
 	}
 
 	/**
@@ -175,6 +179,7 @@ class Buen_Fin_Woo {
 
 		/** Add Message of MSI after add to cart button */
 		$this->loader->add_action( 'woocommerce_before_add_to_cart_form', $plugin_public, 'buen_fin_woo_get_and_set_prices' );
+
 	}
 
 	/**

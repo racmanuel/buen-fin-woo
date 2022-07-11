@@ -1,0 +1,87 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+:root {
+    --font-family: inherit;
+    --padding: 2px;
+    --margin: 6px;
+    --border-radius: 12px;
+}
+
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+#msi-woocommerce {
+    color: #ffffff;
+    background-color: #E20613;
+    border-radius: var(--border-radius);
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+}
+
+.img-msi-woocommerce {
+    width: 62px;
+    height: 62px;
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-msi-woocommerce {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3%;
+}
+
+.msi-woocommerce {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: var(--border-radius);
+}
+
+@media only screen and (min-width: 320px) {
+    .msi-woocommerce {
+        font-size: 14px;
+    }
+}
+
+.msi-woocommerce>table {
+    border: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
+}
+
+.msi-woocommerce>table>tbody>tr>td {
+    padding: 0%;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.msi-woocommerce>table>tbody>tr>td.buen-fin-woo-price {
+    width: 1px;
+    white-space: nowrap;
+}
+
+.conditions-msi-woocommerce {
+    font-size: 8px;
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+}
+

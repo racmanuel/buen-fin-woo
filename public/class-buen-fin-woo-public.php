@@ -114,17 +114,61 @@ class Buen_Fin_Woo_Public
         //Get the Price
         $original_price = $product->get_price();
 
+        /**
+         * Get the WooCommerce Options
+         */
+        $TITLE_OPTION = get_option( 'buen_fin_woo_title' );
+        $MSIR3_OPTION = get_option( 'buen_fin_woo_3_msi' );
+        $MSIR6_OPTION = get_option( 'buen_fin_woo_6_msi' );
+        $MSIR9_OPTION = get_option( 'buen_fin_woo_9_msi' );
+        $MSIR12_OPTION = get_option('buen_fin_woo_12_msi' );
+        $CURRENCY = get_woocommerce_currency();
+        $SYMBOL_CURRENCY = get_woocommerce_currency_symbol();
+        $TERMS_OPTION = get_option( 'buen_fin_woo_terms' );
+        $ROUND_OPTION = get_option( 'buen_fin_woo_round' );
+
         //3 MSI
-        $MSI3 = $original_price / 3;
-        $MSIR3 = round($MSI3, 2);
-
+        if ($MSIR3_OPTION == 'yes'){
+            if($ROUND_OPTION == 'yes'){
+                $price = $original_price / 3;
+                $MSI3 = round($price, 2);
+            }else{
+                $MSI3 = $original_price / 3;
+            }
+        }
+        
         //6 MSI
-        $MSI6 = $original_price / 6;
-        $MSIR6 = round($MSI6, 2);
+        if ($MSIR6_OPTION == 'yes'){
+            if($ROUND_OPTION == 'yes'){
+                $price = $original_price / 6;
+                $MSI6 = round($price, 2);
+            }else{
+                $MSI6 = $original_price / 6;
+            }
+        }
 
-        //6 MSI
-        $MSI12 = $original_price / 12;
-        $MSIR12 = round($MSI12, 2);
+
+        //9 MSI
+        if ($MSIR9_OPTION == 'yes'){
+            if($ROUND_OPTION == 'yes'){
+                $price = $original_price / 9;
+                $MSI9 = round($price, 2);
+            }else{
+                $MSI9 = $original_price / 9;
+            }
+        }
+
+
+        //12 MSI
+        if ($MSIR12_OPTION == 'yes'){
+            if($ROUND_OPTION == 'yes'){
+                $price = $original_price / 12;
+                $MSI12 = round($price, 2);
+            }else{
+                $MSI12 = $original_price / 12;
+            }
+        }
+
 
         // Get the Image
         $image = plugin_dir_url(__FILE__) . 'img/logo_buen_fin_banner_princ.png';
