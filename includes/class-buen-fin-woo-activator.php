@@ -31,6 +31,13 @@ class Buen_Fin_Woo_Activator {
 	 */
 	public static function activate() {
 
+		add_option( 'buen_fin_woo_title' , '¡Aprovecha los precios del Buen Fin + MSI!' );
+        add_option( 'buen_fin_woo_3_msi' , 'yes');
+        add_option( 'buen_fin_woo_6_msi' , 'yes' );
+        add_option( 'buen_fin_woo_9_msi' , 'yes');
+        add_option(	'buen_fin_woo_12_msi', 'yes' );
+        add_option( 'buen_fin_woo_terms' , 'yes' );
+        add_option( 'buen_fin_woo_round' , 'yes' );
 	}
 
 }
