@@ -133,7 +133,6 @@ class Buen_Fin_Woo_Admin
 				'desc_tip' => __( 'Titulo a mostrar antes de los Meses Sin Intereses.', $this->plugin_name ),
 				'id'       => 'buen_fin_woo_title',
 				'type'     => 'text',
-				'value'    => '¡Aprovecha los precios del Buen Fin + MSI!'
 			);
 			
 			// Checkbox for Show MSI

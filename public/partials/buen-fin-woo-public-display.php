@@ -17,49 +17,55 @@
 <div class="row" id="msi-woocommerce">
     <div class="column">
         <div class="row">
-            <img src="<?= $image ?>" class="img-msi-woocommerce" width="50"></img>
-            <span class="title-msi-woocommerce"><?= $TITLE_OPTION ?></span>
+            <img src="<?=$image?>" class="img-msi-woocommerce" width="50"></img>
+            <span class="title-msi-woocommerce"><?=$TITLE_OPTION?></span>
         </div>
-
-        <div class="row">
-            <div class="column msi-woocommerce">
-                <table>
-                    <?php if ($MSIR3_OPTION == 'yes'): ?>
-                    <!-- 3 Meses Sin Intereses -->
-                    <tr>
-                        <td class="buen-fin-woo-price"><?= $SYMBOL_CURRENCY; ?> <?= $MSI3 ?> <?= $CURRENCY ?> </td>
-                        <td>a 3 Meses sin Intereses.</td>
-                    </tr>
-                    <?php endif; ?>
-                    <?php if ($MSIR6_OPTION == 'yes'): ?>
-                    <!-- 6 Meses Sin Intereses -->
-                    <tr>
-                        <td class="buen-fin-woo-price"><?= $SYMBOL_CURRENCY; ?> <?= $MSI6 ?> <?= $CURRENCY ?> </td>
-                        <td>a 6 Meses sin Intereses.</td>
-                    </tr>
-                    <?php endif; ?>
-                    <?php if ($MSIR9_OPTION == 'yes'): ?>
-                    <!-- 9 Meses Sin Intereses -->
-                    <tr>
-                        <td class="buen-fin-woo-price"><?= $SYMBOL_CURRENCY; ?> <?= $MSI9 ?> <?= $CURRENCY ?> </td>
-                        <td>a 9 Meses sin Intereses.</td>
-                    </tr>
-                    <?php endif; ?>
-                    <?php if ($MSIR12_OPTION == 'yes'): ?>
-                    <!-- 12 Meses Sin Intereses -->
-                    <tr>
-                        <td class="buen-fin-woo-price"><?= $SYMBOL_CURRENCY; ?> <?= $MSI12 ?> <?= $CURRENCY ?> </td>
-                        <td>a 12 Meses sin Intereses.</td>
-                    </tr>
-                    <?php endif; ?>
-                </table>
+        <?php if ($MSIR3_OPTION == 'no' && $MSIR6_OPTION == 'no' && $MSIR9_OPTION == 'no' && $MSIR12_OPTION == 'no'): ?>
+        <div class="row set_hide">
+            <? else: ?>
+            <div class="row">
+                <?php endif;?>
+                <div class="column msi-woocommerce">
+                    <table>
+                        <?php if ($MSIR3_OPTION == 'yes'): ?>
+                        <!-- 3 Meses Sin Intereses -->
+                        <tr>
+                            <td class="buen-fin-woo-price"><?=$SYMBOL_CURRENCY;?> <?=$MSI3?> <?=$CURRENCY?> </td>
+                            <td>a 3 Meses sin Intereses.</td>
+                        </tr>
+                        <?php endif;?>
+                        <?php if ($MSIR6_OPTION == 'yes'): ?>
+                        <!-- 6 Meses Sin Intereses -->
+                        <tr>
+                            <td class="buen-fin-woo-price"><?=$SYMBOL_CURRENCY;?> <?=$MSI6?> <?=$CURRENCY?> </td>
+                            <td>a 6 Meses sin Intereses.</td>
+                        </tr>
+                        <?php endif;?>
+                        <?php if ($MSIR9_OPTION == 'yes'): ?>
+                        <!-- 9 Meses Sin Intereses -->
+                        <tr>
+                            <td class="buen-fin-woo-price"><?=$SYMBOL_CURRENCY;?> <?=$MSI9?> <?=$CURRENCY?> </td>
+                            <td>a 9 Meses sin Intereses.</td>
+                        </tr>
+                        <?php endif;?>
+                        <?php if ($MSIR12_OPTION == 'yes'): ?>
+                        <!-- 12 Meses Sin Intereses -->
+                        <tr>
+                            <td class="buen-fin-woo-price"><?=$SYMBOL_CURRENCY;?> <?=$MSI12?> <?=$CURRENCY?> </td>
+                            <td>a 12 Meses sin Intereses.</td>
+                        </tr>
+                        <?php endif;?>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <span class="conditions-msi-woocommerce">
+                    <?php if ($product_type == 'variable'): ?>
+                    <?php _e('Los precios expresados son tomando el producto de menor costo.', 'buen-fin-woo');?>
+                    <?php endif;?>
+                    <?php _e('*Promocion valida solo con tarjetas de crédito y bancos participantes del 10 al 16 de Noviembre del', 'buen-fin-woo');?>
+                    <?php echo date('Y'); ?>. <?=$TERMS_OPTION;?>
+                </span>
             </div>
         </div>
-        <div class="row">
-            <span class="conditions-msi-woocommerce">
-                <?php _e('*Promocion valida solo con tarjetas de crédito y bancos participantes del 10 al 16 de Noviembre del' , 'buen-fin-woo'); ?>
-                <?php echo date('Y'); ?>. <?= $TERMS_OPTION; ?>
-            </span>
-        </div>
     </div>
-</div>

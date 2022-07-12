@@ -113,6 +113,8 @@ class Buen_Fin_Woo_Public
 
         //Get the Price
         $original_price = $product->get_price();
+        //Get the Type
+        $product_type = $product->get_type();
 
         /**
          * Get the WooCommerce Options

@@ -62,9 +62,9 @@
     border: none;
     margin-top: 0px;
     margin-bottom: 0px;
-    width:70%; 
-    margin-left:15%; 
-    margin-right:15%;
+    width:80%; 
+    margin-left:10%; 
+    margin-right:10%;
 }
 
 .msi-woocommerce>table>tbody>tr>td {
@@ -85,3 +85,6 @@
     margin-bottom: var(--margin);
 }
 
+.set_hide{
+    display: none;
+}
