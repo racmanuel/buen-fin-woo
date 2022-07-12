@@ -36,7 +36,7 @@ class Buen_Fin_Woo_Activator {
         add_option( 'buen_fin_woo_6_msi' , 'yes' );
         add_option( 'buen_fin_woo_9_msi' , 'yes');
         add_option(	'buen_fin_woo_12_msi', 'yes' );
-        add_option( 'buen_fin_woo_terms' , 'yes' );
+        add_option( 'buen_fin_woo_terms' , 'Consulta las tarjetas y bancos participantes.' );
         add_option( 'buen_fin_woo_round' , 'yes' );
 	}
 
