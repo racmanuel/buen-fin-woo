@@ -14,7 +14,7 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Buen Fin
- * Plugin URI:        https://racmanuel.dev
+ * Plugin URI:        https://racmanuel.dev/plugins/buen-fin-woo
  * Description:       Plugin para mostrar el precio de los productos a 3, 6, 9, 12 Meses sin Intereses en la pagina individual de productos de WooCommerce, antes del boton de añadir al carrito. Hecho para tiendas de comercio electronico en el Buen Fin en México.
  * Version:           1.0.0
  * Author:            Manuel Ramirez Coronel
