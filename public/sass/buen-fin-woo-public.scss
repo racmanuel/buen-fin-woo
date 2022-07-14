@@ -4,7 +4,7 @@
  */
 :root {
     --font-family: inherit;
-    --padding: 2px;
+    --padding: 3%;
     --margin: 6px;
     --border-radius: 12px;
 }
@@ -24,6 +24,8 @@
     border-radius: var(--border-radius);
     margin-top: var(--margin);
     margin-bottom: var(--margin);
+    padding-left: var(--padding);
+    padding-right: var(--padding);
 }
 
 .img-msi-woocommerce {
