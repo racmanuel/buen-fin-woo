@@ -18,7 +18,7 @@
     <div class="column">
         <div class="row">
             <img src="<?php echo esc_url($image); ?>" class="img-msi-woocommerce" width="50"></img>
-            <span class="title-msi-woocommerce"><?php echo esc_html__($TITLE_OPTION); ?></span>
+            <span class="title-msi-woocommerce"><?php echo esc_html($TITLE_OPTION); ?></span>
         </div>
         <?php if ($MSIR3_OPTION == 'no' && $MSIR6_OPTION == 'no' && $MSIR9_OPTION == 'no' && $MSIR12_OPTION == 'no'): ?>
         <div class="row set_hide">
@@ -31,44 +31,44 @@
                         <!-- 3 Meses Sin Intereses -->
                         <tr>
                             <td class="buen-fin-woo-price">
-                                <?php echo esc_html__($SYMBOL_CURRENCY); ?>
-                                <?php echo esc_html__($MSI3, $this->plugin_name); ?> 
-                                <?php esc_html__($CURRENCY);?>
+                                <?php echo esc_html($SYMBOL_CURRENCY); ?>
+                                <?php echo esc_html($MSI3); ?> 
+                                <?php echo esc_html($CURRENCY);?>
                             </td>
-                            <td><?php echo esc_html_e('a 3 Meses sin Intereses.', $this->plugin_name); ?></td>
+                            <td><?php echo esc_html_e('a 3 Meses sin Intereses.', 'buen-fin-woo'); ?></td>
                         </tr>
                         <?php endif;?>
                         <?php if ($MSIR6_OPTION == 'yes'): ?>
                         <!-- 6 Meses Sin Intereses -->
                         <tr>
                             <td class="buen-fin-woo-price">
-                                <?php echo esc_html__($SYMBOL_CURRENCY); ?>
-                                <?php echo esc_html__($MSI6, $this->plugin_name); ?> 
-                                <?php esc_html__($CURRENCY);?>
+                                <?php echo esc_html($SYMBOL_CURRENCY); ?>
+                                <?php echo esc_html($MSI6); ?> 
+                                <?php echo esc_html($CURRENCY);?>
                             </td>
-                            <td><?php echo esc_html_e('a 6 Meses sin Intereses.', $this->plugin_name); ?></td>
+                            <td><?php echo esc_html_e('a 6 Meses sin Intereses.', 'buen-fin-woo'); ?></td>
                         </tr>
                         <?php endif;?>
                         <?php if ($MSIR9_OPTION == 'yes'): ?>
                         <!-- 9 Meses Sin Intereses -->
                         <tr>
                             <td class="buen-fin-woo-price">
-                                <?php echo esc_html__($SYMBOL_CURRENCY); ?>
-                                <?php echo esc_html__($MSI9, $this->plugin_name); ?> 
-                                <?php esc_html__($CURRENCY);?>
+                                <?php echo esc_html($SYMBOL_CURRENCY); ?>
+                                <?php echo esc_html($MSI9); ?> 
+                                <?php echo esc_html($CURRENCY);?>
                             </td>
-                            <td><?php echo esc_html_e('a 9 Meses sin Intereses.', $this->plugin_name); ?></td>
+                            <td><?php echo esc_html_e('a 9 Meses sin Intereses.', 'buen-fin-woo'); ?></td>
                         </tr>
                         <?php endif;?>
                         <?php if ($MSIR12_OPTION == 'yes'): ?>
                         <!-- 12 Meses Sin Intereses -->
                         <tr>
                             <td class="buen-fin-woo-price">
-                                <?php echo esc_html__($SYMBOL_CURRENCY); ?>
-                                <?php echo esc_html__($MSI12, $this->plugin_name); ?> 
-                                <?php esc_html__($CURRENCY);?>
+                                <?php echo esc_html($SYMBOL_CURRENCY); ?>
+                                <?php echo esc_html($MSI12); ?> 
+                                <?php echo esc_html($CURRENCY);?>
                             </td>
-                            <td><?php echo esc_html_e('a 12 Meses sin Intereses.', $this->plugin_name); ?></td>
+                            <td><?php echo esc_html_e('a 12 Meses sin Intereses.', 'buen-fin-woo'); ?></td>
                         </tr>
                         <?php endif;?>
                     </table>
@@ -77,11 +77,11 @@
             <div class="row">
                 <span class="conditions-msi-woocommerce">
                     <?php if ($product_type == 'variable'): ?>
-                      <?php echo esc_html_e('Los precios expresados son tomando el producto de menor costo.', $this->plugin_name); ?>
+                      <?php echo esc_html_e('Los precios expresados son tomando el producto de menor costo.', 'buen-fin-woo'); ?>
                     <?php endif;?>
-                    <?php echo esc_html_e('*Promocion valida solo con tarjetas de crédito y bancos participantes del 10 al 16 de Noviembre del', $this->plugin_name); ?>
-                    <?php echo wp_date(__('Y', $this->plugin_name)); ?>.
-                    <?php echo esc_html__($TERMS_OPTION); ?>
+                    <?php echo esc_html_e('*Promocion valida solo con tarjetas de crédito y bancos participantes del 10 al 16 de Noviembre del', 'buen-fin-woo'); ?>
+                    <?php echo wp_date(__('Y', 'buen-fin-woo')); ?>.
+                    <?php echo esc_html($TERMS_OPTION); ?>
                 </span>
             </div>
         </div>

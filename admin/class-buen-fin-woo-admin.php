@@ -107,7 +107,7 @@ class Buen_Fin_Woo_Admin
     public function buen_fin_woo_add_section($sections)
     {
 
-        $sections['buen_fin_woo'] = __('Buen Fin', $this->plugin_name);
+        $sections['buen_fin_woo'] = __('Buen Fin', 'buen-fin-woo');
         return $sections;
 
     }
@@ -125,46 +125,46 @@ class Buen_Fin_Woo_Admin
         if ($current_section == 'buen_fin_woo') {
             $settings_buen_fin_woo = array();
             // Add Title to the Settings
-            $settings_buen_fin_woo[] = array('name' => __('Buen Fin', $this->plugin_name), 'type' => 'title', 'desc' => __('Selecciona los meses sin intereses a mostrar en la pagina de producto o dejalos vacios para solamente mostrar el titulo.', $this->plugin_name), 'id' => 'buen-fin-woo');
+            $settings_buen_fin_woo[] = array('name' => __('Buen Fin', 'buen-fin-woo'), 'type' => 'title', 'desc' => __('Selecciona los meses sin intereses a mostrar en la pagina de producto o dejalos vacios para solamente mostrar el titulo.', 'buen-fin-woo'), 'id' => 'buen-fin-woo');
             
 			// Title in Front-End
 			$settings_buen_fin_woo[] = array(
-				'name'     => __( 'Titulo', $this->plugin_name ),
-				'desc_tip' => __( 'Titulo a mostrar antes de los Meses Sin Intereses.', $this->plugin_name ),
+				'name'     => __( 'Titulo', 'buen-fin-woo' ),
+				'desc_tip' => __( 'Titulo a mostrar antes de los Meses Sin Intereses.', 'buen-fin-woo' ),
 				'id'       => 'buen_fin_woo_title',
 				'type'     => 'text',
 			);
 			
 			// Checkbox for Show MSI
             $settings_buen_fin_woo[] = array(
-                'name' => __('3 Meses Sin Intereses', $this->plugin_name),
+                'name' => __('3 Meses Sin Intereses', 'buen-fin-woo'),
                 'id' => 'buen_fin_woo_3_msi',
                 'type' => 'checkbox',
-                'desc' => __('Mostrar', $this->plugin_name),
+                'desc' => __('Mostrar', 'buen-fin-woo'),
             );
 			$settings_buen_fin_woo[] = array(
-				'name' => __('6 Meses Sin Intereses', $this->plugin_name),
+				'name' => __('6 Meses Sin Intereses', 'buen-fin-woo'),
                 'id' => 'buen_fin_woo_6_msi',
                 'type' => 'checkbox',
-                'desc' => __('Mostrar', $this->plugin_name),
+                'desc' => __('Mostrar', 'buen-fin-woo'),
             );
 			$settings_buen_fin_woo[] = array(
-				'name' => __('9 Meses Sin Intereses', $this->plugin_name),
+				'name' => __('9 Meses Sin Intereses', 'buen-fin-woo'),
                 'id' => 'buen_fin_woo_9_msi',
                 'type' => 'checkbox',
-                'desc' => __('Mostrar', $this->plugin_name),
+                'desc' => __('Mostrar', 'buen-fin-woo'),
             );
 			$settings_buen_fin_woo[] = array(
-				'name' => __('12 Meses Sin Intereses', $this->plugin_name),
+				'name' => __('12 Meses Sin Intereses', 'buen-fin-woo'),
                 'id' => 'buen_fin_woo_12_msi',
                 'type' => 'checkbox',
-                'desc' => __('Mostrar', $this->plugin_name),
+                'desc' => __('Mostrar', 'buen-fin-woo'),
             );
 
 			// Title in Front-End
 			$settings_buen_fin_woo[] = array(
-				'name'     => __( 'Terminos y Condiciones', $this->plugin_name ),
-				'desc_tip' => __( 'Inserta algun termino o condicion que quieras que sea visible.', $this->plugin_name ),
+				'name'     => __( 'Terminos y Condiciones', 'buen-fin-woo' ),
+				'desc_tip' => __( 'Inserta algun termino o condicion que quieras que sea visible.', 'buen-fin-woo' ),
 				'id'       => 'buen_fin_woo_terms',
 				'type'     => 'text'
 			);
@@ -173,10 +173,10 @@ class Buen_Fin_Woo_Admin
              * Round WooCommerce MSI
              */
 			$settings_buen_fin_woo[] = array(
-				'name' => __('Redondear', $this->plugin_name),
+				'name' => __('Redondear', 'buen-fin-woo'),
                 'id' => 'buen_fin_woo_round',
                 'type' => 'checkbox',
-                'desc' => __('Activar', $this->plugin_name),
+                'desc' => __('Activar', 'buen-fin-woo'),
             );
 
             $settings_buen_fin_woo[] = array('type' => 'sectionend', 'id' => 'buen-fin-woo');
