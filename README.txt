@@ -32,8 +32,6 @@ Si, el plugin de WooCommerce es indispensable para que funcione.
 
 Dirigete a la configuracion de WooCommerce > Productos > Buen Fin, aqui podras seleccionar cuales son lo meses que quieres mostrar.
 
-== Screenshots ==
-
 == Changelog ==
 
 = 1.0 =
