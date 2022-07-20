@@ -121,7 +121,12 @@ class Buen_Fin_Woo_Admin
         /**
          * Check the current section is what we want
          **/
-		$current_section = (isset($_GET['section']) && !empty($_GET['section']))? $_GET['section']:'';
+
+        /** Get the variable and sanitize */
+        $section = sanitize_text_field( $_GET['section'] );
+
+        /** Check */
+		$current_section = (isset($section) && !empty($section))? $section:'';
         if ($current_section == 'buen_fin_woo') {
             $settings_buen_fin_woo = array();
             // Add Title to the Settings
